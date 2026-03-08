@@ -39,7 +39,6 @@ class Trie:
             self.collect(node.children[child], prefix+child, results)#recurse with the child node, and the prefix with that string inclding the child char
 
 
-
 if __name__ == "__main__":
     trie = Trie()
     with open("mobydick.txt", "r") as f:
@@ -60,5 +59,6 @@ if __name__ == "__main__":
         print(completedlist)
 
     print("Quitting...")
+    quit()
 
 
